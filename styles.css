@@ -7,6 +7,10 @@
     --very-dark-blue: hsl(224, 21%, 14%);
 }
 
+header {
+    display: flex;
+}
+
 body {
     font-family: sans-serif;
     font-size: 16px;
@@ -16,6 +20,15 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+header p {
+    flex-grow: 0;
+    align-self: center;
 }
 
 main {
@@ -33,16 +46,23 @@ main {
 .notification {
     background-color: white;
     margin: 6px;
+    padding: 10px;
+    border-radius: 10px;
     display: flex;
 }
 
 .notification .text {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+}
+
+.notification img {
+    height: 50px;
 }
 
 .unread {
-    background-color: hsl(211, 68%, 94%);
+    background-color: var(--very-light-grayish-blue);
 }
 
 h1 {
