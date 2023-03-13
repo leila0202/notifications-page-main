@@ -10,7 +10,12 @@
 body {
     font-family: sans-serif;
     font-size: 16px;
-    background-color: ;
+    background-color: var(--light-grayish-blue-2);
+}
+
+main {
+    background-color: white;
+    color: var(--dark-grayish-blue);
 }
 
 
@@ -24,8 +29,13 @@ body {
     background-color: hsl(211, 68%, 94%);
 }
 
+h1 {
+    color: var(--very-dark-blue);
+}
+
 .username {
     font-weight: 800;
+    color: var(--very-dark-blue);
 }
 
 .time {
